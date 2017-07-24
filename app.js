@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 var config = require('./config');
 var Url = require('./models/url');
 //Db connection
-mongoose.connect(process.env.MONGODB_URI||"mongodb://alexa:dontforget@ds139082.mlab.com:39082/heroku_ksj3rbgg");
+mongoose.connect(process.env.MONGODB_URI);
 //Handles JSON
 app.use(bodyParser.json());
 //Handles URL encoding
